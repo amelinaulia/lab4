@@ -15,30 +15,20 @@
    -  printf("Пойдут ли программисты пить кофе? (1-да, 0-нет):%d", z);
 5. Конец
 ### Блок-схема
-<img width="122" height="421" alt="Диаграмма без названия drawio" src="https://raw.githubusercontent.com/wyrtwwr/email-assets/refs/heads/main/diagr.drawio.png" />
-
-
-## 2. Реализация программы
-#include <locale.h>
+![Блок схема алгоритма](lab4.drawio.png)
+## 2. Реализация программы:
 #include <stdio.h>
-#include <stdlib.h>
-int main() {
-    setlocale(LC_ALL, "RUS");
-    int A = 300;
-    int B = 1000;
-    int C = 500;
-    int D = 1300;
-    printf("цена перчаток: %dp\n", A);
-    printf("цена портфель: %dp\n", B);
-    printf("цена галстук: %dp\n", C);
-    printf("цена исходная сумма: %dp\n", D);
-    printf("Сдача: %dp\n", D - (A + B + C));
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "");
+	int a, b, z;
+	printf("Введите два рандомных числа: ");
+	scanf_s("%d %d", &a, &b);
+	z = (a % 2 == 0) || (b % 2 == 0);
+	printf("Пойдут ли программисты пить кофе? (1-да, 0-нет):%d", z);
 }
-
-## 3. Результаты работы программы
-цена перчаток: 300p
-цена портфель: 1000p
-цена галстук: 500p
-цена исходная сумма: 1300p
-Сдача: -500p
-Амелина Юлия бИПТ-252
+## 3. Результат работы программы
+![Результат работы программы](image.png)
+## 4. Информация о разработчике
+Амелина Юлия, бИПТ-252
