@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
 int main()
@@ -8,27 +9,27 @@ int main()
 	int b;
 	float c;
 	float d;
-	scanf_s("%c", &a);
-	scanf_s("%d", &b);
-	scanf_s("%f", &c);
-	scanf_s("%e", &d);
+	scanf("%c", &a);
+	scanf("%d", &b);
+	scanf("%f", &c);
+	scanf("%e", &d);
 	printf("%c, %d, %f, %e", a, b, c, d);
 
 	float e,e_1;
-	printf("\nвведите число double:");
-	scanf_s("%f", &e);
+	printf("\nГўГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® double:");
+	scanf("%f", &e);
 	e_1 = e;
 	int x;
 	x = (int)e;
-	printf("Целая часть %d\nДробная часть:%f\n", x, (e_1 - x));
+	printf("Г–ГҐГ«Г Гї Г·Г Г±ГІГј %d\nГ„Г°Г®ГЎГ­Г Гї Г·Г Г±ГІГј:%f\n", x, (e_1 - x));
 	
 	char f;
-	scanf_s("%c", &f);
-	printf("Введено число в десятичной системе счисления: %d\n", f);
-	printf("Его шестнадцатеричная запись: %X",f);
+	scanf("%c", &f);
+	printf("Г‚ГўГҐГ¤ГҐГ­Г® Г·ГЁГ±Г«Г® Гў Г¤ГҐГ±ГїГІГЁГ·Г­Г®Г© Г±ГЁГ±ГІГҐГ¬ГҐ Г±Г·ГЁГ±Г«ГҐГ­ГЁГї: %d\n", f);
+	printf("Г…ГЈГ® ГёГҐГ±ГІГ­Г Г¤Г¶Г ГІГҐГ°ГЁГ·Г­Г Гї Г§Г ГЇГЁГ±Гј: %X",f);
 	*/
 	float g;
-	printf("введите число с клавиатуры: ");
-	scanf_s("%f", &g);
+	printf("ГўГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® Г± ГЄГ«Г ГўГЁГ ГІГіГ°Г»: ");
+	scanf("%f", &g);
 	printf("%f", 1 / g);
 }
