@@ -1,18 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
 int main()
 {
 	setlocale(LC_ALL, "");
 	int a, a1, a2, a3,a4;
-	printf("Введите трёхзначное число: ");
-	scanf_s("%d", &a);
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ ГІГ°ВёГµГ§Г­Г Г·Г­Г®ГҐ Г·ГЁГ±Г«Г®: ");
+	scanf("%d", &a);
 	a1 = a / 100;
-	printf("%d - сотни", a1);
+	printf("%d - Г±Г®ГІГ­ГЁ", a1);
 	a2 = a % 10;
-	printf("\n%d - еденицы", a2);
+	printf("\n%d - ГҐГ¤ГҐГ­ГЁГ¶Г»", a2);
 	a3 = (a - (a1 * 100 + a2))/10;
-	printf("\n%d - десятки", a3);
+	printf("\n%d - Г¤ГҐГ±ГїГІГЄГЁ", a3);
 	a4 = a1 + a2 + a3;
-	printf("\n%d - сумма цифр данного числа ", a4);
-	printf("\n%d%d%d - число наоборот ", a2, a3, a1);
+	printf("\n%d - Г±ГіГ¬Г¬Г  Г¶ГЁГґГ° Г¤Г Г­Г­Г®ГЈГ® Г·ГЁГ±Г«Г  ", a4);
+	printf("\n%d%d%d - Г·ГЁГ±Г«Г® Г­Г Г®ГЎГ®Г°Г®ГІ ", a2, a3, a1);
 }
